@@ -62,8 +62,9 @@ export default function SearchPage() {
     } else {
       setCurrentPage(1);
     }
-    typeof window !== "undefined" &&
+    if (typeof window !== "undefined") {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   const generateMatch = async () => {
