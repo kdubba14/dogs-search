@@ -48,11 +48,7 @@ export default function SearchPage() {
   const dogs = dogsData?.data || [];
   const isDogsLoading = isDogIdsLoading || isGetDogsLoading;
 
-  const {
-    data: matchedDogIdData,
-    mutate: matchDog,
-    isPending: _isMatchingDog,
-  } = useMatchDog();
+  const { data: matchedDogIdData, mutate: matchDog } = useMatchDog();
   const matchedDogId = matchedDogIdData?.data.match;
 
   const { data: matchedDogData } = useGetDogs(
