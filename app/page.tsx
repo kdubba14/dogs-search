@@ -58,7 +58,7 @@ export default function SearchPage() {
   const { data: matchedDogData, isFetching: isGettingMatchedDogLoading } =
     useGetDogs(matchedDogId ? [matchedDogId] : undefined);
   const matchedDog: Dog | undefined = (matchedDogData?.data || [])[0];
-  const isMatchingDog = _isMatchingDog || isGettingMatchedDogLoading;
+  // const isMatchingDog = _isMatchingDog || isGettingMatchedDogLoading;
 
   const handlePageChange = (page: number) => {
     if (1 < page && page <= totalPages) {
