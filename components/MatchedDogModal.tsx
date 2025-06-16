@@ -19,7 +19,7 @@ export const MatchedDogModal = ({ close, matchedDog }: Props) => {
             <span className="text-2xl animate-pulse">🎉</span>
           </div>
           <h3 className="text-2xl font-bold text-gray-900 mb-4 animate-in slide-in-from-top-2 duration-700">
-            It's a Match!
+            {"It's a Match!"}
           </h3>
           <div className="mb-6 animate-in slide-in-from-bottom-4 duration-700 delay-200">
             <div className="relative inline-block">
